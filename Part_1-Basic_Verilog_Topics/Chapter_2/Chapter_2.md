@@ -128,3 +128,40 @@ flowchart TD
     E --> M
 ```
 ---
+
+## 2.3 Modules
+
+- A Module is the basic building block in Verilog.
+
+- A Module can be an element or a collection of lower-level design blocks.
+
+- A Module provides the necessary functionality to a higher-level block through its port interface (inputs and outputs), but hide the internal Implementation.
+
+- Example
+    - **Ripple Carry Counter -**
+    - T_Flipflop and D_Flipflop are example of module.
+
+- Declaration of Module : 
+```
+    module <MODULE_NAME> (<MODULE_TERMINAL_LIST>);
+    ---
+    <MODULE_INTERNAL>
+    ---
+    endmodule
+
+```
+
+- Internal of Each module can be defined at four levels of abstraction, depending upon the needs of design.
+    - The module behave identically irrespective of level of abstraction.
+    - The Levels are defined below : 
+        - Behavioral or Algorithmic level
+        - Dataflow level
+        - Gate level
+        - Switch level
+
+- **Register Transfer Level(RTL)** is used for a Verilog description that uses a combination of behavioral and dataflow constructs and is acceptable to logic synthesis tools.
+
+- Normally the higher level of abstarction the more flexible and technology independent the design. as we go lower towards switch-level design the design becomes technology dependent and inflexible.
+
+---
+
