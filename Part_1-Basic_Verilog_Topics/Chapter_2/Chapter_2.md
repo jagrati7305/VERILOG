@@ -165,3 +165,18 @@ flowchart TD
 
 ---
 
+## 2.4 Instances
+- A module provides a template from which you can create actual objects.
+
+- Each Object has its own name, variables, parameters and I/O interface.
+
+- The process of creating objects from a module template iss called **Instantiation**, and the objects is called **Instances**.
+
+- Example 
+    - Ripple Carry Counter contains **Four Instances** of **T-flipflop**.
+    - Each **T-flipflop** contains instances of **D-flipflop** and **Inverter**.
+
+
+> In Verilog one module definition cannot contain another module definition within it.
+
+---
