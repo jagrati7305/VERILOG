@@ -180,3 +180,4 @@ flowchart TD
 > In Verilog one module definition cannot contain another module definition within it.
 
 ---
+## 2.5 
